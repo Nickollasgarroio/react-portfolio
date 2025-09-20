@@ -14,15 +14,10 @@ export default function DefaultLayout({
         {children}
       </main>
       <footer className="w-full flex items-center justify-center py-3">
-        <Link
-          isExternal
-          className="flex items-center gap-1 text-current"
-          href="https://heroui.com"
-          title="heroui.com homepage"
-        >
-          <span className="text-default-600">Powered by</span>
-          <p className="text-primary">HeroUI</p>
-        </Link>
+        <div className="text-sm flex items-center gap-2 opacity-80">
+          <p className="text-default-600">Made by using</p>
+          <p className="text-primary">React + HeroUI</p>
+        </div>
       </footer>
     </div>
   );
