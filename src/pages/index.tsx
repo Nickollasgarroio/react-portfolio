@@ -1,52 +1,160 @@
 import { Image } from "@heroui/image";
 import { Button } from "@heroui/button";
+import { Spacer } from "@heroui/spacer";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import { title, subtitle } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import { FaReact } from "react-icons/fa6";
+import { FaPython } from "react-icons/fa";
+import { BiLogoJavascript } from "react-icons/bi";
+import { SiSelenium } from "react-icons/si";
+import { FaPaintBrush } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa";
+import { RiTeamFill } from "react-icons/ri";
+import { LuLanguages } from "react-icons/lu";
 
 export default function IndexPage() {
   return (
     <DefaultLayout>
       {/* Seção Inicial */}
-      <div className="flex flex-col gap-4 items-center justify-center">
+      <div className=" flex flex-col gap-4 items-center justify-center">
         <section className="flex flex-col items-center justify-center">
-          <div className="inline-block max-w-lg text-center justify-center ">
+          <div className="flex flex-col items-center justify-center inline-block max-w-lg text-center justify-center  lg:absolute">
             <Image
-              src="/public/img/foto_portfolio.png"
+              src="/public/img/sembg_fixed_magenta.png"
               alt="Portfolio"
-              className="rounded-lg mb-8 hover:scale-110 transition-all duration-600"
+              className="mb-8 lg:left-75 scale-150 -z-10 "
               width={200}
               height={200}
             />
           </div>
-          <div className="max-w-xl text-center justify-center flex-col">
-            <span className={title()}>Nickollas Giordano Arroio</span>
-            <br />
-            <span
-              className={subtitle({
-                class:
-                  "bg-gradient-to-r from-[#FF1CF7] to-[#b249f8] bg-clip-text text-transparent",
-              })}
-            >
-              Desenvolvedor Front-end & Python
-            </span>
+          <div className="relative z-10 max-w-xl text-left flex-col">
+            <p className={title()}>
+              Olá, eu sou o{" "}
+              <span className={title({ color: "violet" })}>
+                Nickollas Giordano Arroio
+              </span>
+              , Desenvolvedor Front-end & Python
+            </p>
           </div>
         </section>
+        <Spacer y={10} />
         <section className="">
-          <div className="max-w-3xl mx-auto text-justify flex flex-col gap-4">
-            <Card>
-              {/* <CardHeader>Sobre Mim</CardHeader> */}
+          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 gap-4 transition-all ">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
               <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <FaReact className="size-6" />
+                  <span className="font-bold">React.JS</span>
+                </div>
                 <p>
-                  <strong>Nickollas Giordano Arroio</strong>, nascido em 1998 em
-                  São Paulo, é um desenvolvedor com experiência em
-                  <strong> React.js</strong> e <strong>Python</strong>. Trabalha
-                  com ferramentas como
-                  <strong> Supabase</strong>, <strong>Tailwind CSS</strong>,
-                  <strong> HeroUI</strong> e <strong>Selenium</strong>. Em 2024,
-                  iniciou o processo de obtenção da
-                  <strong> cidadania italiana e espanhola</strong>, ampliando
-                  sua mobilidade internacional.
+                  Desenvolvi um WebApp de prontuários usando React, React Hook
+                  Form e Vite
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <FaPython className="size-6" />
+                  <span className="font-bold">Python</span>
+                </div>
+                <p>
+                  Scripts de automação Python para processamento de dados,
+                  integrações e ferramentas internas.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <BiLogoJavascript className="size-6" />
+                  <span className="font-bold">JavaScript</span>
+                </div>
+                <p>
+                  Lógica de cliente com JavaScript/TypeScript, validações com
+                  Zod e integração com APIs.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <SiSelenium className="size-6" />
+                  <span className="font-bold">Selenium</span>
+                </div>
+                <p>
+                  Automações operacionais que reduziram tarefas manuais,
+                  scraping e integração com planilhas.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <SiSelenium className="size-6" />
+                  <span className="font-bold">Automação & Ops</span>
+                </div>
+                <p>
+                  Criei rotinas para integração com Google Sheets e automações
+                  operacionais que reduziram tarefas manuais.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <FaPaintBrush className="size-6" />
+                  <span className="font-bold">Front-End</span>
+                </div>
+                <p>
+                  Implementação e design de interfaces responsivas com Tailwind,
+                  HeroUI/NextUI — foco em acessibilidade e usabilidade.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <FaDatabase className="size-6" />
+                  <span className="font-bold">Back-End / DB</span>
+                </div>
+                <p>
+                  Modelagem e queries SQL no Supabase/Postgres; upserts,
+                  relacionamentos (profiles ↔ auth.users) e
+                  agendamento/calendário.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <RiTeamFill className="size-6" />
+                  <span className="font-bold">Gerencial</span>
+                </div>
+                <p>
+                  Definição de produto, coordenação de beta privado e
+                  comunicação entre times para priorização de features.
+                </p>
+              </CardBody>
+            </Card>
+
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)]">
+              <CardBody className="p-4">
+                <div className="flex flex gap-2 mb-4">
+                  <LuLanguages className="size-6" />
+                  <span className="font-bold">Linguas</span>
+                </div>
+                <p>
+                  Inglês avançado, possibilidade de viagens, reuniões e
+                  mobilidade
                 </p>
               </CardBody>
             </Card>
