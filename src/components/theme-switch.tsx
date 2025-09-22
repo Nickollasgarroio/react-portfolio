@@ -66,15 +66,22 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
               "pt-px",
               "px-0",
               "mx-0",
+              "group",
             ],
             classNames?.wrapper,
           ),
         })}
       >
         {isSelected ? (
-          <MoonFilledIcon size={22} />
+          <MoonFilledIcon
+            size={22}
+            className="group-hover:text-violet-500 dark:group-hover:text-violet-400 transition-colors duration-200"
+          />
         ) : (
-          <SunFilledIcon size={22} />
+          <SunFilledIcon
+            size={22}
+            className="group-hover:text-violet-500 dark:group-hover:text-violet-400 transition-colors duration-200"
+          />
         )}
       </div>
     </Component>

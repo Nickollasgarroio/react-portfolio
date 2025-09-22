@@ -1,28 +1,139 @@
-import { title } from "@/components/primitives";
+import { subtitle, title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
+import { Listbox, ListboxSection, ListboxItem } from "@heroui/listbox";
+import { BiSolidRightArrow } from "react-icons/bi";
+import { ExperienceItem } from "@/components/experienceItem";
+import { ExperienceGroup } from "@/components/experienceGroup";
+import { SkillsGroup } from "@/components/skillGroup";
+import { Spacer } from "@heroui/spacer";
 
 export default function CurriculumPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title()}>Curriculum</h1>
+          <h1 className={title({ color: "violet" })}>Curriculum</h1>
         </div>
-        <div className="max-w-3xl px-3 text-justify flex flex-col gap-4">
-          <span className={title({ size: "sm" })}>Projetos Pessoais</span>
-          <p>
-            Desenvolvedor Front-End com experiência em <strong>React.js</strong>
-            , <strong>HeroUI</strong>,<strong>CSS/Tailwind</strong> e{" "}
-            <strong>Supabase</strong>, focado na criação de interfaces modernas,
-            responsivas e escaláveis. Participei do desenvolvimento de um
-            aplicativo médico de prontuários, integrando front-end a banco de
-            dados no Supabase, aplicando boas práticas de versionamento com Git
-            e priorizando a usabilidade. Tenho também experiência complementar
-            com Python e automação de processos, o que amplia minha visão em
-            soluções de software completas. Atualmente em processo de obtenção
-            da cidadania italiana e espanhola, o que aumenta minha
-            disponibilidade para atuar em projetos internacionais.
+        <div className="max-w-3xl text-justify flex flex-col gap-3">
+          <span className={title({ size: "sm" })}>Resumo Profissional</span>
+          <p className="pl-2">
+            Desenvolvedor com experiência em Front-End (React.js, HeroUI,
+            Tailwind, Supabase) e Back-End (Python, Selenium, automação e web
+            scraping). Atuei em projetos que uniram criação de interfaces
+            modernas, responsivas e escaláveis a soluções internas de automação,
+            reduzindo custos e otimizando fluxos de trabalho. Participei do
+            desenvolvimento de um aplicativo médico de prontuários, integrei
+            front-end a banco de dados no Supabase e implementei automações em
+            Python + Selenium para coleta e análise de dados. Tenho também
+            experiência em gestão de equipes de TI e projetos, priorizando
+            entregas com eficiência e qualidade. Atualmente em processo de
+            obtenção da cidadania italiana e espanhola, o que amplia minha
+            mobilidade internacional e disponibilidade para atuar em ambientes
+            multiculturais.
           </p>
+          <Spacer x={4} />
+          <div className="flex flex-col gap-1">
+            <span className={title({ size: "sm" })}>Projetos Pessoais</span>
+            <ExperienceGroup
+              title="CareMore - Aplicativo de Prontuários Médicos (2024 - Atual)"
+              items={[
+                "Desenvolvimento completo do front-end em React.js com HeroUI e Tailwind CSS.",
+                "Implementação de formulários dinâmicos com React Hook Form e Zod.",
+                "Integração com Supabase para autenticação, banco de dados e armazenamento seguro.",
+                "Uso de Git para versionamento e boas práticas de desenvolvimento.",
+                "Design responsivo e experiência de usuário otimizada para médicos e pacientes.",
+              ]}
+            />
+          </div>
+          <Spacer x={4} />
+          <div className="flex flex-col gap-1">
+            <span className={title({ size: "sm" })}>
+              Experiência Profissional
+            </span>
+            <ExperienceGroup
+              title="Adequar Saúde (2018 - 2025)"
+              items={[
+                "Desenvolvimento de sistemas internos de automação e web scraping em Python + Selenium",
+                "Implementação de processos automatizados que reduziram tarefas manuais repetitivas",
+                "Criação de dashboards estratégicos com Google Apps Script e Google Sheets.",
+                "Desenvolvimento e manutenção de aplicações web internas com React.js e Supabase.",
+                "Design responsivo e experiência de usuário otimizada para médicos e pacientes.",
+              ]}
+            />
+            <ExperienceGroup
+              title="Media Portal (2023)"
+              items={[
+                "Gestão e acompanhamento de projetos de TI, garantindo alinhamento entre equipe técnica e stakeholders.",
+                "Apoio em projetos de desenvolvimento com foco em satisfação do cliente.",
+                "Comunicação clara para resolução de demandas técnicas e entrega de valor.",
+              ]}
+            />
+          </div>
+          <Spacer x={4} />
+          <span className={title({ size: "sm" })}>Educação</span>
+          <ExperienceGroup
+            // title="Media Portal (2023)"
+            items={[
+              "Análise e Desenvolvimento de Software - UNIFATECIE (2024 - Atual)",
+              "Produção Fonográfica - Faculdade Belas Artes de São Paulo (2017 - 2019)",
+              "Automação Industrial - ETEC Martin Luther King (2014 - 2017)",
+            ]}
+          />
+          <Spacer x={4} />
+          <span className={title({ size: "sm" })}>Certificações</span>
+          <ExperienceGroup
+            // title="Media Portal (2023)"
+            items={[
+              "Meta Front-End Developer Professional Certificate (em andamento) - Coursera",
+              "Google Project Management Professional Certificate (em andamento) - Coursera",
+              "Introdução ao Desenvolvimento Front-End - Coursera (2023)",
+              "Arquitetura de Computadores - Alura (2022)",
+              "Design de Sites Mobile com Figma - Alura (2022)",
+            ]}
+          />
+          <Spacer x={4} />
+          <span className={title({ size: "sm" })}>Habilidades Técnicas</span>
+          <SkillsGroup
+            items={[
+              <>
+                <strong>Linguagens</strong>: Python, JavaScript, TypeScript,
+                HTML, CSS
+              </>,
+              <>
+                <strong>Front-End</strong>: React.js, HeroUI, Tailwind,
+                Bootstrap
+              </>,
+              <>
+                <strong>Back-End & Banco de Dados</strong>: Supabase, Python
+                (Selenium, automação, web scraping)
+              </>,
+              <>
+                <strong>Ferramentas</strong>: Git, VSCode, Google Apps Script,
+                Google Sheets, Figma, Photoshop, Illustrator, Microsoft Office
+              </>,
+              <>
+                <strong>Metodologias</strong>: Agile/Scrum, Automação de
+                processos, Desenvolvimento de interfaces, Gestão de projetos
+              </>,
+            ]}
+          />
+          <Spacer x={4} />
+          <span className={title({ size: "sm" })}>Idiomas</span>
+          <ExperienceGroup
+            items={[
+              "Português (Nativo)",
+              "Inglês (Avançado)",
+              "Espanhol (Intermediário)",
+              "Francês (Iniciante)",
+              "Alemão (Iniciante)",
+            ]}
+          />
+          <span className={title({ size: "sm" })}>
+            Mobilidade Internacional
+          </span>
+          <ExperienceGroup
+            items={["Processo de cidadania italiana e espanhola em andamento"]}
+          />
         </div>
       </section>
     </DefaultLayout>

@@ -43,11 +43,12 @@ export default function IndexPage() {
               </p>
             </p>
           </div>
+          {/* Cards de Competências */}
         </section>
         <Spacer y={10} />
         <section className="">
           <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 gap-4 transition-all ">
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <FaReact className="size-6" />
@@ -60,7 +61,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <FaPython className="size-6" />
@@ -73,7 +74,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <BiLogoJavascript className="size-6" />
@@ -86,7 +87,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <SiSelenium className="size-6" />
@@ -99,7 +100,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <SiSelenium className="size-6" />
@@ -112,7 +113,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <FaPaintBrush className="size-6" />
@@ -125,7 +126,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <FaDatabase className="size-6" />
@@ -139,7 +140,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <RiTeamFill className="size-6" />
@@ -152,7 +153,7 @@ export default function IndexPage() {
               </CardBody>
             </Card>
 
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_25px_5px_rgba(255,0,255,0.6)] cursor-default">
+            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
               <CardBody className="p-4">
                 <div className="flex flex gap-2 mb-4">
                   <LuLanguages className="size-6" />
@@ -166,26 +167,6 @@ export default function IndexPage() {
             </Card>
           </div>
         </section>
-        <div className="flex flex-col justify-center gap-4 mt-4 sm:flex-row ">
-          <Button
-            color="primary"
-            as={"a"}
-            href="/curriculum"
-            target="_blank"
-            className=" w-fit self-center"
-          >
-            Curriculum
-          </Button>
-          <Button
-            color="primary"
-            as={"a"}
-            href="/about"
-            target="_blank"
-            className=" w-fit self-center"
-          >
-            Sobre
-          </Button>
-        </div>
       </div>
     </DefaultLayout>
   );
