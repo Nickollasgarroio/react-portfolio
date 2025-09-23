@@ -11,7 +11,9 @@ export default function CurriculumPage() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="text-custom-violet-400 inline-block max-w-lg text-center justify-center mb-4">
-          <h1 className={title()}>Curriculum</h1>
+          <h1 className={`${title()} opacity-0 animate-fade-slide`}>
+            Curriculum
+          </h1>
         </div>
         <div className="max-w-3xl text-justify flex flex-col gap-3">
           <div className="flex flex-col gap-1 group/title opacity-0 animate-fade-slide [animation-delay:0.3s]">

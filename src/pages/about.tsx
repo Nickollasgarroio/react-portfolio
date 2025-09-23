@@ -7,7 +7,11 @@ export default function AboutPage() {
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={`${title()} text-custom-violet-400`}>Sobre o Dev</h1>
+          <h1
+            className={`${title()} text-custom-violet-400 opacity-0 animate-fade-slide`}
+          >
+            Sobre o Dev
+          </h1>
         </div>
       </section>
       <section className="">
