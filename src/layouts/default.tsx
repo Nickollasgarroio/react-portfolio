@@ -1,3 +1,4 @@
+import { LogoNickollas } from "@/assets/svg/logoNickollas";
 import { Navbar } from "@/components/navbar";
 
 export default function DefaultLayout({
@@ -13,8 +14,11 @@ export default function DefaultLayout({
       </main>
       <footer className="w-full flex items-center justify-center py-3 mt-6">
         <div className="text-sm flex items-center gap-2 opacity-80">
-          <p className="text">Nickollas Giordano</p>
-          <p className="text-custom-violet-400">2025</p>
+          {/* <p className="text">Nickollas Giordano</p>
+          <p className="text-custom-violet-400">2025</p> */}
+        </div>
+        <div className="size-5 md:size-8">
+          <LogoNickollas className="text-custom-violet-800" />
         </div>
       </footer>
     </div>

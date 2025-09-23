@@ -34,14 +34,10 @@ export default {
           '0%': { opacity: '0', transform: 'translateX(50px)' },
           '100%': { opacity: '1', transform: 'translateX(0)' },
         },
-        'fade-slide-secondary': {
-          '0%': { opacity: '0', transform: 'translateX(50px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
       },
       animation: {
         'fade-slide': 'fade-slide 1s ease-out forwards',
-        'fade-slide-secondary': 'fade-slide-secondary 2s ease-soft-spring forwards',
+        'fade-slide-secondary': 'fade-slide 2s ease-soft-spring forwards',
       },
     },
   },
@@ -49,13 +45,23 @@ export default {
   plugins: [
     heroui({
       themes: {
+        light: {
+          colors: {
+            primary: {
+              DEFAULT: "#b249f8",
+              foreground: "#000000",
+            },
+            focus: "#e066ff",
+          },
+        },
+
         dark: {
           colors: {
             primary: {
-              DEFAULT: "#BEF264",
+              DEFAULT: "#FF1CF7",
               foreground: "#000000",
             },
-            focus: "#BEF264",
+            focus: "#e066ff",
           },
         },
       },

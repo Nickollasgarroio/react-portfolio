@@ -37,11 +37,11 @@ export default function CartaAoRecutradorPage() {
           <p className="opacity-0 animate-fade-slide [animation-delay:0.6s]">
             Atenciosamente,
           </p>
-          <span>
+          <span className="flex flex-col items-center md:items-start">
             <p className="text-custom-violet-400 dark:text-custom-violet-300 font-bold opacity-0 animate-fade-slide [animation-delay:0.8s]">
               Nickollas Giordano Arroio
             </p>
-            <AssNickollas className="w-auto h-24 text-violet-alpha self-start text-custom-violet-300 opacity-0 animate-fade-slide [animation-delay:1s]" />
+            <AssNickollas className="w-auto h-24 text-violet-alpha  text-custom-violet-300 opacity-0 animate-fade-slide [animation-delay:1s]" />
           </span>
         </div>
       </section>

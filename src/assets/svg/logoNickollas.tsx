@@ -11,8 +11,8 @@ export const LogoNickollas: React.FC<LogoNickollasProps> = ({ className }) => {
       viewBox="0 0 500 500"
       fill="currentColor"
       className={className}
-      width="40"
-      height="40"
+      // width="400"
+      // height="400"
     >
       <g data-name="Ass">
         <path d="M469.98,87.92h-148.81c-5.52,0-10,4.48-10,10v105.24l-108.75-115.23h0s-.01-.01-.01-.01h-.01s-.01,0-.01,0h-77.18l319.77,319.77h25.01c5.52,0,10-4.48,10-10V97.92c0-5.52-4.48-10-10-10Z" />

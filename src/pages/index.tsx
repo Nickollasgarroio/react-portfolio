@@ -19,16 +19,16 @@ export default function IndexPage() {
       {/* Seção Inicial */}
       <div className=" flex flex-col gap-4 items-center justify-center">
         <section className="flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center max-w-lg text-center lg:absolute dark:opacity-85">
+          <div className="flex flex-col items-center justify-center max-w-lg text-center lg:absolute dark:opacity-85 opacity-0 animate-fade-slide">
             <Image
-              src="/public/img/sembg_fixed_magenta.png"
+              src="/img/sembg_fixed_magenta.png"
               alt="Portfolio"
-              className="mb-8 -top-4 lg:right-90 scale-150 -z-10 lg:top-0 opacity-0 translate-x-20 animate-fade-slide-secondary "
+              className="mb-8 -top-4 lg:right-90 scale-150 -z-10 lg:top-0  "
               width={200}
               height={200}
             />
           </div>
-          <div className="relative z-10 max-w-xl text-left flex-col opacity-0 translate-x-20 animate-fade-slide">
+          <div className="relative z-10 max-w-xl text-left flex-col opacity-0  animate-fade-slide">
             <p className={title()}>
               Olá, eu sou o{" "}
               <span className="text-custom-violet-400 dark:text-custom-violet-300">

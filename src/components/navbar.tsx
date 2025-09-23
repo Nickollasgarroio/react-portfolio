@@ -37,7 +37,7 @@ export const Navbar = () => {
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand className="gap-3 max-w-fit">
           <Link
-            className="flex justify-start items-center gap-1"
+            className="flex justify-start items-center gap-1 size-8"
             color="foreground"
             href="/"
           >
@@ -87,8 +87,8 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="md:hidden basis-1 pl-4" justify="end">
-        <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+        <Link isExternal href={siteConfig.links.whatsapp}>
+          <BsWhatsapp className="text-default-500 size-5 hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />
@@ -98,17 +98,7 @@ export const Navbar = () => {
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === siteConfig.navMenuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                href="#"
-                size="lg"
-              >
+              <Link color={"primary"} href={item.href} size="lg">
                 {item.label}
               </Link>
             </NavbarMenuItem>

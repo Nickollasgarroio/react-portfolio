@@ -20,6 +20,10 @@ export const siteConfig = {
       label: "Carta ao Recrutador",
       href: "/recruiter",
     },
+    {
+      label: "Contato",
+      href: "/contact",
+    },
   ],
   navMenuItems: [
     {
@@ -37,6 +41,10 @@ export const siteConfig = {
     {
       label: "Carta ao Recrutador",
       href: "/recruiter",
+    },
+    {
+      label: "Contato",
+      href: "/contact",
     },
   ],
   links: {
