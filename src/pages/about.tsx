@@ -17,7 +17,7 @@ export default function AboutPage() {
       <section className="">
         <div className="max-w-3xl mx-auto text-justify flex flex-col items-center gap-4 ">
           <Image
-            src="/img/sembg_fixed.png"
+            src={`${process.env.PUBLIC_URL}/assets/sembg_fixed.png`}
             alt="Foto Pessoal"
             className="mb-8 self-center h-80 lg:h-128 opacity-0 animate-fade-slide "
           />
