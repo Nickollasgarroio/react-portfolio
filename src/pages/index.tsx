@@ -21,7 +21,7 @@ export default function IndexPage() {
         <section className="flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center max-w-lg text-center lg:absolute dark:opacity-85 opacity-0 animate-fade-slide">
             <Image
-              src={`${process.env.PUBLIC_URL}/assets/foto.png`}
+              src={`${process.env.PUBLIC_URL}/img/foto.png`}
               alt="Portfolio"
               className="mb-8 -top-4 lg:right-90 scale-150 -z-10 lg:top-0  "
               width={200}
