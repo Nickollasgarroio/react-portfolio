@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "react-scripts build && mv build docs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
