@@ -5,8 +5,8 @@ export const siteConfig = {
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Inicio",
+      href: "/react-portfolio",
     },
     {
       label: "Curriculum",
@@ -27,8 +27,8 @@ export const siteConfig = {
   ],
   navMenuItems: [
     {
-      label: "Home",
-      href: "/",
+      label: "Inicio",
+      href: "/react-portfolio",
     },
     {
       label: "Curriculum",
