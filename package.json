@@ -2,7 +2,7 @@
   "name": "nickollas-g-arroio-portfolio-react",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://Nickollasgarroio.github.io/react-portfolio",
+  "homepage": "https://Nickollasgarroio.github.io/react-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
