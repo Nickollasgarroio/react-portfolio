@@ -17,7 +17,7 @@ export const siteConfig = {
       href: "/about",
     },
     {
-      label: "Carta ao Recrutador",
+      label: "Recrutador",
       href: "/recruiter",
     },
     {
@@ -39,7 +39,7 @@ export const siteConfig = {
       href: "/about",
     },
     {
-      label: "Carta ao Recrutador",
+      label: "Ao Recrutador",
       href: "/recruiter",
     },
     {

@@ -48,14 +48,13 @@ export const Navbar = () => {
           </Link>
         </NavbarBrand>
         <div className="hidden md:flex gap-4 justify-start ml-2">
-          {siteConfig.navItems.map((item) => (
+          {siteConfig.navItems.map((item, index) => (
             <NavbarItem key={item.href}>
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200",
+                  `data-[active=true]:text-primary data-[active=true]:font-medium hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200 ${index === siteConfig.navItems.length - 1 ? "text-custom-violet-400" : ""}`,
                 )}
-                color="foreground"
                 href={item.href}
               >
                 {item.label}
