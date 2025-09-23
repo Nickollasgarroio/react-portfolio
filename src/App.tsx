@@ -10,7 +10,7 @@ import ContactPage from "@/pages/contact";
 function App() {
   return (
     <Routes>
-      <Route element={<IndexPage />} path="/" />
+      <Route element={<IndexPage />} path="/react-portfolio" />
       <Route element={<AboutPage />} path="/about" />
       <Route element={<CurriculumPage />} path="/curriculum" />
       <Route element={<CartaAoRecutradorPage />} path="/recruiter" />
