@@ -2,11 +2,11 @@
   "name": "nickollas-g-arroio-portfolio-react",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://Nickollasgarroio.github.io/",
+  "homepage": "https://nickollasgarroio.github.io/react-portfolio/",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "react-scripts build && mv build docs",
+    "build": "vite build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
