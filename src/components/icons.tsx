@@ -13,6 +13,7 @@ export const Logo: React.FC<IconSvgProps> = ({
     viewBox="0 0 32 32"
     width={size || height}
     {...props}
+    className="text-custom-violet-800"
   >
     <path
       clipRule="evenodd"

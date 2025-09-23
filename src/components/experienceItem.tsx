@@ -9,9 +9,9 @@ export function ExperienceItem({ children }: ExperienceItemProps) {
     <li className="group flex items-center gap-2 cursor-default pl-2">
       <BiSolidRightArrow
         size={14}
-        className="size-4 flex-shrink-0 text-violet-500 transition-shadow group-hover:filter group-hover:drop-shadow-[0_0_10px_rgba(255,0,255,0.8)] "
+        className="size-4 flex-shrink-0 text-custom-violet-400 transition-shadow "
       />
-      <span className="group-hover:text-violet-400 transition-colors ">
+      <span className="group-hover:text-custom-violet-400 transition-colors ">
         {children}
       </span>
     </li>

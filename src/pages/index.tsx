@@ -12,6 +12,9 @@ import { FaPaintBrush } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 import { LuLanguages } from "react-icons/lu";
+import { MdOutlineHomeWork } from "react-icons/md";
+import { FaPencilAlt } from "react-icons/fa";
+import { CardCompetencia } from "@/components/cardCompetencias";
 
 export default function IndexPage() {
   return (
@@ -19,25 +22,25 @@ export default function IndexPage() {
       {/* Seção Inicial */}
       <div className=" flex flex-col gap-4 items-center justify-center">
         <section className="flex flex-col items-center justify-center">
-          <div className="flex flex-col items-center justify-center inline-block max-w-lg text-center justify-center  lg:absolute">
+          <div className="flex flex-col items-center justify-center max-w-lg text-center lg:absolute dark:opacity-85">
             <Image
               src="/public/img/sembg_fixed_magenta.png"
               alt="Portfolio"
-              className="mb-8 -top-4 lg:left-75 scale-150 -z-10 lg:top-0 "
+              className="mb-8 -top-4 lg:right-90 scale-150 -z-10 lg:top-0 opacity-0 translate-x-20 animate-fade-slide-secondary "
               width={200}
               height={200}
             />
           </div>
-          <div className="relative z-10 max-w-xl text-left flex-col">
+          <div className="relative z-10 max-w-xl text-left flex-col opacity-0 translate-x-20 animate-fade-slide">
             <p className={title()}>
               Olá, eu sou o{" "}
-              <span className={title({ color: "violet" })}>
+              <span className="text-custom-violet-400 dark:text-custom-violet-300">
                 Nickollas Giordano Arroio
               </span>
               <p
                 className={`${title()} text-black dark:text-white 
-                [text-shadow:0px_0px_5px_white] 
-                dark:[text-shadow:none]`}
+                [text-shadow:0px_0px_4px_white] dark:[text-shadow:none]
+                `}
               >
                 , Desenvolvedor Front-end & Python
               </p>
@@ -48,123 +51,60 @@ export default function IndexPage() {
         <Spacer y={10} />
         <section className="">
           <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 gap-4 transition-all ">
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <FaReact className="size-6" />
-                  <span className="font-bold">React.JS</span>
-                </div>
-                <p>
-                  Desenvolvi um WebApp de prontuários usando React, React Hook
-                  Form e Vite
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <FaPython className="size-6" />
-                  <span className="font-bold">Python</span>
-                </div>
-                <p>
-                  Scripts de automação Python para processamento de dados,
-                  integrações e ferramentas internas.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <BiLogoJavascript className="size-6" />
-                  <span className="font-bold">JavaScript</span>
-                </div>
-                <p>
-                  Lógica de cliente com JavaScript/TypeScript, validações com
-                  Zod e integração com APIs.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <SiSelenium className="size-6" />
-                  <span className="font-bold">Selenium</span>
-                </div>
-                <p>
-                  Automações operacionais que reduziram tarefas manuais,
-                  scraping e integração com planilhas.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <SiSelenium className="size-6" />
-                  <span className="font-bold">Automação & Ops</span>
-                </div>
-                <p>
-                  Criei rotinas para integração com Google Sheets e automações
-                  operacionais que reduziram tarefas manuais.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <FaPaintBrush className="size-6" />
-                  <span className="font-bold">Front-End</span>
-                </div>
-                <p>
-                  Implementação e design de interfaces responsivas com Tailwind,
-                  HeroUI/NextUI — foco em acessibilidade e usabilidade.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <FaDatabase className="size-6" />
-                  <span className="font-bold">Back-End / DB</span>
-                </div>
-                <p>
-                  Modelagem e queries SQL no Supabase/Postgres; upserts,
+            <CardCompetencia
+              title="React.JS"
+              icon={<FaReact size={20} />}
+              text="Desenvolvi um WebApp de prontuários usando React, React Hook Form e Vite"
+            />
+            <CardCompetencia
+              title="Python"
+              icon={<FaPython size={20} />}
+              text="Scripts de automação Python para processamento de dados,
+                  integrações e ferramentas internas."
+            />
+            <CardCompetencia
+              title="JavaScript"
+              icon={<BiLogoJavascript size={20} />}
+              text="Lógica de cliente com JavaScript/TypeScript, validações com
+                  Zod e integração com APIs."
+            />
+            <CardCompetencia
+              title="Selenium"
+              icon={<SiSelenium size={20} />}
+              text="Lógica de cliente com JavaScript/TypeScript, validações com
+                  Zod e integração com APIs."
+            />
+            <CardCompetencia
+              title="Automação & Ops"
+              icon={<FaPencilAlt size={20} />}
+              text="Criei rotinas para integração com Google Sheets e automações
+                  operacionais que reduziram tarefas manuais."
+            />
+            <CardCompetencia
+              title="Front-End"
+              icon={<FaPaintBrush size={20} />}
+              text="Implementação e design de interfaces responsivas com Tailwind,
+                  HeroUI/NextUI — foco em acessibilidade e usabilidade.."
+            />
+            <CardCompetencia
+              title="Back-End / DB"
+              icon={<FaDatabase size={20} />}
+              text="Modelagem e queries SQL no Supabase/Postgres; upserts,
                   relacionamentos (profiles ↔ auth.users) e
-                  agendamento/calendário.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <RiTeamFill className="size-6" />
-                  <span className="font-bold">Gerencial</span>
-                </div>
-                <p>
-                  Definição de produto, coordenação de beta privado e
-                  comunicação entre times para priorização de features.
-                </p>
-              </CardBody>
-            </Card>
-
-            <Card className="max-w-fit transition-all duration-500 hover:scale-105 hover:shadow-[0_0_20px_2px_rgba(255,0,255,0.4)] cursor-default">
-              <CardBody className="p-4">
-                <div className="flex flex gap-2 mb-4">
-                  <LuLanguages className="size-6" />
-                  <span className="font-bold">Linguas</span>
-                </div>
-                <p>
-                  Inglês avançado, possibilidade de viagens, reuniões e
-                  mobilidade
-                </p>
-              </CardBody>
-            </Card>
+                  agendamento/calendário."
+            />
+            <CardCompetencia
+              title="Gerencial"
+              icon={<RiTeamFill size={20} />}
+              text="Definição de produto, coordenação de beta privado e
+                  comunicação entre times para priorização de features."
+            />
+            <CardCompetencia
+              title="Linguas"
+              icon={<LuLanguages size={20} />}
+              text="Inglês avançado, possibilidade de viagens, reuniões e
+                  mobilidade"
+            />
           </div>
         </section>
       </div>

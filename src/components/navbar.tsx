@@ -29,6 +29,7 @@ import { MdEmail, MdOutlineWhatsapp } from "react-icons/md";
 import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
+import { LogoNickollas } from "@/assets/svg/logoNickollas";
 
 export const Navbar = () => {
   return (
@@ -40,8 +41,10 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <Logo />
-            <p className="font-bold text-inherit">ACME</p>
+            <LogoNickollas className="text-custom-violet-400 hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200" />
+            {/* <p className="font-bold text-custom-violet-800 hover:text-custom-violet-400 dark:hover:text-custom-violet-300">
+              Nickollas G.
+            </p> */}
           </Link>
         </NavbarBrand>
         <div className="hidden md:flex gap-4 justify-start ml-2">
@@ -50,7 +53,7 @@ export const Navbar = () => {
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200",
+                  "data-[active=true]:text-primary data-[active=true]:font-medium hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200",
                 )}
                 color="foreground"
                 href={item.href}
@@ -68,16 +71,16 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden md:flex gap-2 ">
           <Link isExternal href={siteConfig.links.whatsapp} title="WhatsApp">
-            <BsWhatsapp className="text-default-500 size-5 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200" />
+            <BsWhatsapp className="text-default-500 size-5 hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200" />
           </Link>
           <Link isExternal href={siteConfig.links.linkedIn} title="LinkedIn">
-            <FaLinkedin className="text-default-500 size-5 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200" />
+            <FaLinkedin className="text-default-500 size-5 hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200" />
           </Link>
           <Link isExternal href={siteConfig.links.github} title="GitHub">
-            <FaGithub className="text-default-500 size-5 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200" />
+            <FaGithub className="text-default-500 size-5 hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200" />
           </Link>
           <Link isExternal href={siteConfig.links.email} title="Email">
-            <BiLogoGmail className="text-default-500 size-6 hover:text-violet-500 dark:hover:text-violet-400 transition-colors duration-200" />
+            <BiLogoGmail className="text-default-500 size-6 hover:text-custom-violet-400 dark:hover:text-custom-violet-300 transition-colors duration-200" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>

@@ -8,7 +8,7 @@ interface SkillsGroupProps {
 
 export function SkillsGroup({ title, items }: SkillsGroupProps) {
   return (
-    <section className="mb-6 pl-2">
+    <section className="mb-6 pl-2 ">
       {title && <span className={subtitle()}>{title}</span>}
       <ul className="">
         {items.map((item, index) => (

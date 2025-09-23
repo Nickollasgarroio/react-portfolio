@@ -11,10 +11,10 @@ export default function DefaultLayout({
       <main className="container mx-auto max-w-7xl px-6 flex-grow pt-16">
         {children}
       </main>
-      <footer className="w-full flex items-center justify-center py-3">
+      <footer className="w-full flex items-center justify-center py-3 mt-6">
         <div className="text-sm flex items-center gap-2 opacity-80">
-          <p className="text-default-600">Made by using</p>
-          <p className="text-primary">React + HeroUI</p>
+          <p className="text">Made by using</p>
+          <p className="text-custom-violet-400">React + HeroUI</p>
         </div>
       </footer>
     </div>

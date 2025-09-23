@@ -6,34 +6,46 @@ import { ExperienceItem } from "@/components/experienceItem";
 import { ExperienceGroup } from "@/components/experienceGroup";
 import { SkillsGroup } from "@/components/skillGroup";
 import { Spacer } from "@heroui/spacer";
+import { Button } from "@heroui/button";
+import { Link } from "@heroui/link";
 
 export default function CurriculumPage() {
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title({ color: "violet" })}>Curriculum</h1>
+        <div className="text-custom-violet-400 inline-block max-w-lg text-center justify-center mb-4">
+          <h1 className={title()}>Curriculum</h1>
         </div>
         <div className="max-w-3xl text-justify flex flex-col gap-3">
-          <span className={title({ size: "sm" })}>Resumo Profissional</span>
-          <p className="pl-2">
-            Desenvolvedor com experiência em Front-End (React.js, HeroUI,
-            Tailwind, Supabase) e Back-End (Python, Selenium, automação e web
-            scraping). Atuei em projetos que uniram criação de interfaces
-            modernas, responsivas e escaláveis a soluções internas de automação,
-            reduzindo custos e otimizando fluxos de trabalho. Participei do
-            desenvolvimento de um aplicativo médico de prontuários, integrei
-            front-end a banco de dados no Supabase e implementei automações em
-            Python + Selenium para coleta e análise de dados. Tenho também
-            experiência em gestão de equipes de TI e projetos, priorizando
-            entregas com eficiência e qualidade. Atualmente em processo de
-            obtenção da cidadania italiana e espanhola, o que amplia minha
-            mobilidade internacional e disponibilidade para atuar em ambientes
-            multiculturais.
-          </p>
+          <div className="flex flex-col gap-1 group">
+            <span
+              className={`${title({ size: "sm" })} group-hover:text-custom-violet-400 `}
+            >
+              Resumo Profissional
+            </span>
+            <p className="pl-2 mt-4">
+              Desenvolvedor com experiência em Front-End (React.js, HeroUI,
+              Tailwind, Supabase) e Back-End (Python, Selenium, automação e web
+              scraping). Atuei em projetos que uniram criação de interfaces
+              modernas, responsivas e escaláveis a soluções internas de
+              automação, reduzindo custos e otimizando fluxos de trabalho.
+              Participei do desenvolvimento de um aplicativo médico de
+              prontuários, integrei front-end a banco de dados no Supabase e
+              implementei automações em Python + Selenium para coleta e análise
+              de dados. Tenho também experiência em gestão de equipes de TI e
+              projetos, priorizando entregas com eficiência e qualidade.
+              Atualmente em processo de obtenção da cidadania italiana e
+              espanhola, o que amplia minha mobilidade internacional e
+              disponibilidade para atuar em ambientes multiculturais.
+            </p>
+          </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-1">
-            <span className={title({ size: "sm" })}>Projetos Pessoais</span>
+          <div className="flex flex-col gap-2 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
+              Projetos Pessoais
+            </span>
             <ExperienceGroup
               title="CareMore - Aplicativo de Prontuários Médicos (2024 - Atual)"
               items={[
@@ -46,8 +58,10 @@ export default function CurriculumPage() {
             />
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-1">
-            <span className={title({ size: "sm" })}>
+          <div className="flex flex-col gap-4 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
               Experiência Profissional
             </span>
             <ExperienceGroup
@@ -70,70 +84,108 @@ export default function CurriculumPage() {
             />
           </div>
           <Spacer x={4} />
-          <span className={title({ size: "sm" })}>Educação</span>
-          <ExperienceGroup
-            // title="Media Portal (2023)"
-            items={[
-              "Análise e Desenvolvimento de Software - UNIFATECIE (2024 - Atual)",
-              "Produção Fonográfica - Faculdade Belas Artes de São Paulo (2017 - 2019)",
-              "Automação Industrial - ETEC Martin Luther King (2014 - 2017)",
-            ]}
-          />
+          <div className="flex flex-col gap-4 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
+              Educação
+            </span>
+            <ExperienceGroup
+              // title="Media Portal (2023)"
+              items={[
+                "Análise e Desenvolvimento de Software - UNIFATECIE (2024 - Atual)",
+                "Produção Fonográfica - Faculdade Belas Artes de São Paulo (2017 - 2019)",
+                "Automação Industrial - ETEC Martin Luther King (2014 - 2017)",
+              ]}
+            />
+          </div>
           <Spacer x={4} />
-          <span className={title({ size: "sm" })}>Certificações</span>
-          <ExperienceGroup
-            // title="Media Portal (2023)"
-            items={[
-              "Meta Front-End Developer Professional Certificate (em andamento) - Coursera",
-              "Google Project Management Professional Certificate (em andamento) - Coursera",
-              "Introdução ao Desenvolvimento Front-End - Coursera (2023)",
-              "Arquitetura de Computadores - Alura (2022)",
-              "Design de Sites Mobile com Figma - Alura (2022)",
-            ]}
-          />
+          <div className="flex flex-col gap-4 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
+              Certificações
+            </span>
+            <ExperienceGroup
+              // title="Media Portal (2023)"
+              items={[
+                "Meta Front-End Developer Professional Certificate (em andamento) - Coursera",
+                "Google Project Management Professional Certificate (em andamento) - Coursera",
+                "Introdução ao Desenvolvimento Front-End - Coursera (2023)",
+                "Arquitetura de Computadores - Alura (2022)",
+                "Design de Sites Mobile com Figma - Alura (2022)",
+              ]}
+            />
+          </div>
           <Spacer x={4} />
-          <span className={title({ size: "sm" })}>Habilidades Técnicas</span>
-          <SkillsGroup
-            items={[
-              <>
-                <strong>Linguagens</strong>: Python, JavaScript, TypeScript,
-                HTML, CSS
-              </>,
-              <>
-                <strong>Front-End</strong>: React.js, HeroUI, Tailwind,
-                Bootstrap
-              </>,
-              <>
-                <strong>Back-End & Banco de Dados</strong>: Supabase, Python
-                (Selenium, automação, web scraping)
-              </>,
-              <>
-                <strong>Ferramentas</strong>: Git, VSCode, Google Apps Script,
-                Google Sheets, Figma, Photoshop, Illustrator, Microsoft Office
-              </>,
-              <>
-                <strong>Metodologias</strong>: Agile/Scrum, Automação de
-                processos, Desenvolvimento de interfaces, Gestão de projetos
-              </>,
-            ]}
-          />
+          <div className="flex flex-col gap-4 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
+              Habilidades Técnicas
+            </span>
+            <div className="flex flex-col gap-4 group/title">
+              <SkillsGroup
+                items={[
+                  <>
+                    <strong>Linguagens</strong>: Python, JavaScript, TypeScript,
+                    HTML, CSS
+                  </>,
+                  <>
+                    <strong>Front-End</strong>: React.js, HeroUI, Tailwind,
+                    Bootstrap
+                  </>,
+                  <>
+                    <strong>Back-End & Banco de Dados</strong>: Supabase, Python
+                    (Selenium, automação, web scraping)
+                  </>,
+                  <>
+                    <strong>Ferramentas</strong>: Git, VSCode, Google Apps
+                    Script, Google Sheets, Figma, Photoshop, Illustrator,
+                    Microsoft Office
+                  </>,
+                  <>
+                    <strong>Metodologias</strong>: Agile/Scrum, Automação de
+                    processos, Desenvolvimento de interfaces, Gestão de projetos
+                  </>,
+                ]}
+              />
+            </div>
+          </div>
           <Spacer x={4} />
-          <span className={title({ size: "sm" })}>Idiomas</span>
-          <ExperienceGroup
-            items={[
-              "Português (Nativo)",
-              "Inglês (Avançado)",
-              "Espanhol (Intermediário)",
-              "Francês (Iniciante)",
-              "Alemão (Iniciante)",
-            ]}
-          />
-          <span className={title({ size: "sm" })}>
-            Mobilidade Internacional
-          </span>
-          <ExperienceGroup
-            items={["Processo de cidadania italiana e espanhola em andamento"]}
-          />
+          <div className="flex flex-col gap-4 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
+              Idiomas
+            </span>
+            <ExperienceGroup
+              items={[
+                "Português (Nativo)",
+                "Inglês (Avançado)",
+                "Espanhol (Intermediário)",
+                "Francês (Iniciante)",
+                "Alemão (Iniciante)",
+              ]}
+            />
+          </div>
+          <div className="flex flex-col gap-4 group/title">
+            <span
+              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
+            >
+              Mobilidade Internacional
+            </span>
+            <ExperienceGroup
+              items={[
+                "Processo de cidadania italiana e espanhola em andamento",
+              ]}
+            />
+          </div>
+          <Link href="recruiter">
+            <Button className="bg-custom-violet-800 hover:bg-custom-violet-400 max-w-fit mx-auto p-5">
+              Carta ao Recrutador
+            </Button>
+          </Link>
         </div>
       </section>
     </DefaultLayout>
