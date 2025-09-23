@@ -13,8 +13,8 @@ export default function DefaultLayout({
       </main>
       <footer className="w-full flex items-center justify-center py-3 mt-6">
         <div className="text-sm flex items-center gap-2 opacity-80">
-          <p className="text">Made by using</p>
-          <p className="text-custom-violet-400">React + HeroUI</p>
+          <p className="text">Nickollas Giordano</p>
+          <p className="text-custom-violet-400">2025</p>
         </div>
       </footer>
     </div>

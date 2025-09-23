@@ -40,9 +40,9 @@ export const siteConfig = {
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
-    linkedIn: "https://twitter.com/hero_ui",
-    whatsapp: "https://heroui.com",
+    github: "https://github.com/Nickollasgarroio",
+    linkedIn: "https://www.linkedin.com/in/nickollasgiordanoarroio/",
+    whatsapp: "https://wa.me/5511985214691",
     email: "mailto:nickollasgiordanoarroio@gmail.com",
   },
 };
