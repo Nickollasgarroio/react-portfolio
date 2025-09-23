@@ -9,11 +9,9 @@ export function ExperienceItem({ children }: ExperienceItemProps) {
     <li className="group flex items-center gap-2 cursor-default pl-2">
       <BiSolidRightArrow
         size={14}
-        className="size-4 flex-shrink-0 text-custom-violet-400 transition-shadow "
+        className="size-4 flex-shrink-0 text-custom-violet-400 group-hover:icon-rotate"
       />
-      <span className="group-hover:text-custom-violet-400 transition-colors ">
-        {children}
-      </span>
+      <span className="transition-colors hover-violet">{children}</span>
     </li>
   );
 }

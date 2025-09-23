@@ -10,16 +10,16 @@ export default function CartaAoRecutradorPage() {
           <h1
             className={`${title()} text-custom-violet-400 dark:text-custom-violet-300`}
           >
-            Sobre o Dev
+            Carta ao Recrutador
           </h1>
         </div>
       </section>
       <section className="">
         <div className="max-w-3xl mx-auto text-justify flex flex-col gap-4">
-          <p>Prezados,</p>
-          <p>
+          <p className="opacity-0 animate-fade-slide ">Prezados,</p>
+          <p className="opacity-0 animate-fade-slide [animation-delay:0.3s]">
             Tenho experiência prática tanto em desenvolvimento de interfaces
-            modernas com <strong> React.js</strong>, <strong> HeroUI</strong>,{" "}
+            modernas com <strong> React.js</strong>, <strong> HeroUI</strong>,
             <strong> CSS/Tailwind</strong> e <strong> Supabase</strong> quanto
             em automação de processos e web scraping com
             <strong> Python</strong> e <strong> Selenium.</strong> Essa
@@ -34,12 +34,14 @@ export default function CartaAoRecutradorPage() {
             minha mobilidade internacional, permitindo atuação em projetos
             multiculturais. Atenciosamente,
           </p>
-          <p>Atenciosamente,</p>
+          <p className="opacity-0 animate-fade-slide [animation-delay:0.6s]">
+            Atenciosamente,
+          </p>
           <span>
-            <p className="text-custom-violet-400 dark:text-custom-violet-300 font-bold">
+            <p className="text-custom-violet-400 dark:text-custom-violet-300 font-bold opacity-0 animate-fade-slide [animation-delay:0.8s]">
               Nickollas Giordano Arroio
             </p>
-            <AssNickollas className="w-auto h-24 text-violet-alpha self-start text-custom-violet-800" />
+            <AssNickollas className="w-auto h-24 text-violet-alpha self-start text-custom-violet-300 opacity-0 animate-fade-slide [animation-delay:1s]" />
           </span>
         </div>
       </section>

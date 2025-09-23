@@ -1,8 +1,6 @@
 import { Image } from "@heroui/image";
-import { Button } from "@heroui/button";
 import { Spacer } from "@heroui/spacer";
-import { Card, CardBody, CardHeader } from "@heroui/card";
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
 import { FaReact } from "react-icons/fa6";
 import { FaPython } from "react-icons/fa";
@@ -12,7 +10,6 @@ import { FaPaintBrush } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
 import { RiTeamFill } from "react-icons/ri";
 import { LuLanguages } from "react-icons/lu";
-import { MdOutlineHomeWork } from "react-icons/md";
 import { FaPencilAlt } from "react-icons/fa";
 import { CardCompetencia } from "@/components/cardCompetencias";
 
@@ -50,41 +47,47 @@ export default function IndexPage() {
         </section>
         <Spacer y={10} />
         <section className="">
-          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-3 gap-4 transition-all ">
+          <div className="max-w-3xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-4 transition-all ">
             <CardCompetencia
               title="React.JS"
               icon={<FaReact size={20} />}
               text="Desenvolvi um WebApp de prontuários usando React, React Hook Form e Vite"
+              className="opacity-0 animate-fade-slide [animation-delay:0.3s] md:[animation-delay:0.3s]"
             />
             <CardCompetencia
               title="Python"
               icon={<FaPython size={20} />}
               text="Scripts de automação Python para processamento de dados,
                   integrações e ferramentas internas."
+              className="opacity-0 animate-fade-slide [animation-delay:0.6s] md:[animation-delay:0.6s]"
             />
             <CardCompetencia
               title="JavaScript"
               icon={<BiLogoJavascript size={20} />}
               text="Lógica de cliente com JavaScript/TypeScript, validações com
                   Zod e integração com APIs."
+              className="opacity-0 animate-fade-slide [animation-delay:0.3s] md:[animation-delay:0.9s]"
             />
             <CardCompetencia
               title="Selenium"
               icon={<SiSelenium size={20} />}
               text="Lógica de cliente com JavaScript/TypeScript, validações com
                   Zod e integração com APIs."
+              className="opacity-0 animate-fade-slide [animation-delay:0.6s] md:[animation-delay:0.3s]"
             />
             <CardCompetencia
               title="Automação & Ops"
               icon={<FaPencilAlt size={20} />}
               text="Criei rotinas para integração com Google Sheets e automações
                   operacionais que reduziram tarefas manuais."
+              className="opacity-0 animate-fade-slide [animation-delay:0.3s] md:[animation-delay:0.6s]"
             />
             <CardCompetencia
               title="Front-End"
               icon={<FaPaintBrush size={20} />}
               text="Implementação e design de interfaces responsivas com Tailwind,
                   HeroUI/NextUI — foco em acessibilidade e usabilidade.."
+              className="opacity-0 animate-fade-slide [animation-delay:0.6s] md:[animation-delay:0.9s]"
             />
             <CardCompetencia
               title="Back-End / DB"
@@ -92,18 +95,21 @@ export default function IndexPage() {
               text="Modelagem e queries SQL no Supabase/Postgres; upserts,
                   relacionamentos (profiles ↔ auth.users) e
                   agendamento/calendário."
+              className="opacity-0 animate-fade-slide [animation-delay:0.3s] md:[animation-delay:0.3s]"
             />
             <CardCompetencia
               title="Gerencial"
               icon={<RiTeamFill size={20} />}
               text="Definição de produto, coordenação de beta privado e
                   comunicação entre times para priorização de features."
+              className="opacity-0 animate-fade-slide [animation-delay:0.6s] md:[animation-delay:0.6s]"
             />
             <CardCompetencia
               title="Linguas"
               icon={<LuLanguages size={20} />}
               text="Inglês avançado, possibilidade de viagens, reuniões e
                   mobilidade"
+              className="opacity-0 animate-fade-slide [animation-delay:0.3s] md:[animation-delay:0.9s]"
             />
           </div>
         </section>

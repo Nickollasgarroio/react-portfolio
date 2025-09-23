@@ -1,3 +1,30 @@
 @import "tailwindcss";
 
 @config "../../tailwind.config.js";
+
+@layer utilities {
+  .card-hover {
+    @apply group-hover/card:text-custom-violet-700 dark:group-hover/card:text-custom-violet-400 transition-colors duration-600;
+  }
+  .hover-violet {
+    @apply hover:text-custom-violet-700 dark:hover:text-custom-violet-400 transition-colors duration-600;
+  }
+  .group-hover-experience {
+    @apply group-hover/experience:text-custom-violet-700 dark:group-hover/card:text-custom-violet-400 transition-colors duration-600;
+  }
+  .group-hover-skills {
+    @apply group-hover/skills:text-custom-violet-700 dark:group-hover/card:text-custom-violet-400 transition-colors duration-600;
+  }
+  .group-hover-rotate-skills {
+    @apply group-hover/skills:rotate-90 transition-transform duration-800;
+  }
+  .group-hover-icon-rotate-experience {
+    @apply group-hover/experience:rotate-90 transition-transform duration-800;
+  }
+  .group-hover-title {
+    @apply group-hover/title:text-custom-violet-700 dark:group-hover/card:text-custom-violet-400 transition-colors duration-600 text-shadow-2xs;
+  }
+  .icon-rotate {
+    @apply hover:rotate-90 transition-transform duration-800;
+  }
+}

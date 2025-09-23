@@ -10,11 +10,7 @@ export function ExperienceGroup({ title, items }: experienceGroupProps) {
   return (
     <section className="mb-6 pl-2 flex flex-col gap-2 group/experience">
       {title && (
-        <span
-          className={`${subtitle()} group-hover/experience:text-custom-violet-400`}
-        >
-          {title}
-        </span>
+        <span className={`${subtitle()} group-hover-experience`}>{title}</span>
       )}
       <ul className="space-y-1">
         {items.map((item, index) => (

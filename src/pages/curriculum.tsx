@@ -1,8 +1,5 @@
 import { subtitle, title } from "@/components/primitives";
 import DefaultLayout from "@/layouts/default";
-import { Listbox, ListboxSection, ListboxItem } from "@heroui/listbox";
-import { BiSolidRightArrow } from "react-icons/bi";
-import { ExperienceItem } from "@/components/experienceItem";
 import { ExperienceGroup } from "@/components/experienceGroup";
 import { SkillsGroup } from "@/components/skillGroup";
 import { Spacer } from "@heroui/spacer";
@@ -17,9 +14,9 @@ export default function CurriculumPage() {
           <h1 className={title()}>Curriculum</h1>
         </div>
         <div className="max-w-3xl text-justify flex flex-col gap-3">
-          <div className="flex flex-col gap-1 group">
+          <div className="flex flex-col gap-1 group/title opacity-0 animate-fade-slide [animation-delay:0.3s]">
             <span
-              className={`${title({ size: "sm" })} group-hover:text-custom-violet-400 `}
+              className={`${title({ size: "sm" })} group-hover-title text-glow-violet `}
             >
               Resumo Profissional
             </span>
@@ -40,10 +37,8 @@ export default function CurriculumPage() {
             </p>
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-2 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-2 group/title opacity-0 animate-fade-slide [animation-delay:0.6s]">
+            <span className={`${title({ size: "sm" })} group-hover-title `}>
               Projetos Pessoais
             </span>
             <ExperienceGroup
@@ -58,10 +53,8 @@ export default function CurriculumPage() {
             />
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-4 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-4 group/title opacity-0 animate-fade-slide [animation-delay:0.9s]">
+            <span className={`${title({ size: "sm" })} group-hover-title `}>
               Experiência Profissional
             </span>
             <ExperienceGroup
@@ -84,10 +77,8 @@ export default function CurriculumPage() {
             />
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-4 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-4 group/title opacity-0 animate-fade-slide [animation-delay:1.2s]">
+            <span className={`${title({ size: "sm" })} group-hover-title `}>
               Educação
             </span>
             <ExperienceGroup
@@ -100,10 +91,8 @@ export default function CurriculumPage() {
             />
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-4 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-4 group/title opacity-0 animate-fade-slide [animation-delay:1.5s]">
+            <span className={`${title({ size: "sm" })} group-hover-title`}>
               Certificações
             </span>
             <ExperienceGroup
@@ -118,10 +107,8 @@ export default function CurriculumPage() {
             />
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-4 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-4 group/title opacity-0 animate-fade-slide [animation-delay:1.8s]">
+            <span className={`${title({ size: "sm" })} group-hover-title`}>
               Habilidades Técnicas
             </span>
             <div className="flex flex-col gap-4 group/title">
@@ -153,10 +140,8 @@ export default function CurriculumPage() {
             </div>
           </div>
           <Spacer x={4} />
-          <div className="flex flex-col gap-4 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-4 group/title opacity-0 animate-fade-slide [animation-delay:2.1s]">
+            <span className={`${title({ size: "sm" })} group-hover-title`}>
               Idiomas
             </span>
             <ExperienceGroup
@@ -169,10 +154,8 @@ export default function CurriculumPage() {
               ]}
             />
           </div>
-          <div className="flex flex-col gap-4 group/title">
-            <span
-              className={`${title({ size: "sm" })} group-hover/title:text-custom-violet-400 `}
-            >
+          <div className="flex flex-col gap-4 group/title opacity-0 animate-fade-slide [animation-delay:2.4s]">
+            <span className={`${title({ size: "sm" })} group-hover-title`}>
               Mobilidade Internacional
             </span>
             <ExperienceGroup
@@ -182,7 +165,7 @@ export default function CurriculumPage() {
             />
           </div>
           <Link href="recruiter">
-            <Button className="bg-custom-violet-800 hover:bg-custom-violet-400 max-w-fit mx-auto p-5">
+            <Button className="bg-custom-violet-800 hover:bg-custom-violet-400 font-bold text-white dark:text-black max-w-fit mx-auto p-5 opacity-0 animate-fade-slide [animation-delay:2.8s]">
               Carta ao Recrutador
             </Button>
           </Link>
